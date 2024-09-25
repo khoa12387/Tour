@@ -1,0 +1,316 @@
+.detail-container {
+    display: flex;
+    flex-direction: column; /* Stack sections vertically */
+    align-items: center;
+   
+    background-color: #000000;
+}
+
+.book {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin-top: 7rem;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('https://res.cloudinary.com/driiz3taz/image/upload/v1723729400/destinations/sooq0p7ddcwscdenjsto.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 8rem 5rem;
+    background-attachment: fixed;
+    text-align: left;
+    width: 100%;
+}
+
+.book .video-container {
+    flex: 1 1 30rem;
+}
+
+.book .video-container video {
+    border-radius: 1rem;
+    width: 100%;
+    border: 1rem solid #fff;
+}
+
+.book .content {
+    flex: 1 1 42rem;
+}
+
+.book .content span {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.book .content h3 {
+    color: #ffffff;
+    font-size: 4rem;
+    margin-top: .5rem;
+}
+
+.book .content p {
+    padding: 1rem 0;
+    font-size: 1.4rem;
+    color: #feffff;
+    line-height: 2;
+}
+
+.section-wrapper {
+    display: flex;
+    justify-content: space-between; /* Aligns items side by side */
+    width: 100%; /* Ensures the wrapper takes full width */
+   
+}
+
+.tour-details, .booking-form {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    padding-top: 130px;
+}
+
+.tour-details {
+    /* Space between sections */
+    padding-left: 50px;
+}
+
+.booking-form {
+    margin-left: 0px; /* Space between sections */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+}
+
+.tour-details .box {
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite;
+    position: relative;
+    margin: auto;
+}
+
+.tour-details .box span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
+    -webkit-box-reflect: below 0px linear-gradient(transparent, transparent, #0004);
+}
+
+.tour-details .box span img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-top: 30px; /* Space above the heading */
+}
+
+.content p {
+    font-size: 1.4rem;
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+.booking-form h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.booking-form .form-section {
+    margin-bottom: 20px;
+}
+
+.booking-form .form-section h3 {
+    font-size: 1.6rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.booking-form .form-section .form-group {
+    margin-bottom: 15px;
+}
+
+.booking-form .form-section .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.booking-form .form-section .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1rem;
+}
+
+.booking-form .form-section .form-group input:focus {
+    border-color: #29d9d5;
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.booking-form .total {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+@keyframes animate {
+    0% {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100% {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.reviews-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.reviews-section h2 {
+    font-size: 2rem;
+    color: #f0ad4e;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.review {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.review p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.review .rating {
+    font-weight: bold;
+    color: #f39c12; /* Gold color for star ratings */
+}
+
+.review .comment {
+    margin: 10px 0;
+}
+
+.review .date {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input[type="number"],
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="number"]:focus,
+.form-group textarea:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+/* Additional styling for better mobile responsiveness */
+@media (max-width: 768px) {
+    .reviews-section {
+        padding: 1.5rem;
+    }
+
+    .review {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 1.5rem;
+    }
+
+    .form-group label {
+        font-size: 1rem;
+    }
+
+    .form-group input[type="number"],
+    .form-group textarea {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    button[type="submit"] {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}

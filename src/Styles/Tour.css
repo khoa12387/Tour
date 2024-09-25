@@ -1,0 +1,255 @@
+/* Định dạng phần tiêu đề tour */
+.Tour {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background: url('https://res.cloudinary.com/driiz3taz/image/upload/v1724235316/destinations/home_anhnendiemden_ec0xv8.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    padding: 100px 0; /* Padding trên và dưới */
+}
+
+.Tour .content {
+    max-width: 70rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Nền bán trong suốt */
+    padding: 2rem; /* Padding nội dung */
+    border-radius: 1rem; /* Bo tròn góc */
+    margin-left: 150px;
+}
+.tour .image {
+    width: 60%; /* Ensure this is set according to your design */
+    height: 200px; /* Height as per your requirement */
+    overflow: hidden; /* Hide overflow */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure it is treated as a block-level element */
+}
+
+.tour .image img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của khối chứa */
+    height: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều cao của khối chứa */
+    object-fit: cover; /* Giữ tỷ lệ hình ảnh và lấp đầy toàn bộ khối chứa */
+    display: block; /* Loại bỏ khoảng trắng dưới hình ảnh */
+}
+
+.Tour .content h3 {
+    font-size: 4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.Tour .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.Tour .content .btn {
+    padding: 0.75rem 2rem;
+    background-color: #29d9d5;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Tour .content .btn:hover {
+    background-color: #1f9b9a;
+}
+
+/* Định dạng phần form đặt tour */
+.book-form {
+    width: 80%;
+    margin: 2rem auto;
+    background: rgb(34, 46, 46);
+    border-radius: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(17, 17, 17, 0.3);
+    padding: 3rem 2rem;
+}
+
+.book-form form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.book-form form .inputBox {
+    flex: 1 1 25rem;
+}
+
+.book-form form .inputBox span {
+    font-size: 2.0rem;
+    color: #aaa;
+}
+
+.book-form form .inputBox input,
+.book-form .inputBox select {
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    border-radius: 5rem;
+    border: 0.2rem solid #29d9d5;
+    font-size: 1.6rem;
+    color: #aaa;
+    background: none;
+    margin-top: 1rem;
+}
+
+.book-form form .btn {
+    flex: 1 1 15rem;
+    padding: 1.2rem;
+    background-color: #29d9d5;
+    color: #fff;
+    border: none;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.book-form form .btn:hover {
+    background-color: #1f9b9a;
+}
+
+/* Định dạng danh sách tour */
+.tour-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 2rem 0;
+}
+
+.tour {
+    flex: 1 1 calc(33.333% - 20px); /* Hiển thị 3 tour mỗi hàng, với khoảng cách giữa các tour */
+   
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+.tour .image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.tour .content {
+    padding: 1.5rem;
+}
+
+.tour .content h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.tour .content p {
+    font-size: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+.tour .content a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.tour .content a:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Định dạng phần liên hệ */
+.contact {
+    background: #09828d;
+    padding: 2rem 0;
+}
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: #ffffff;
+    border: 1px solid #ccc;
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #000;
+    background: none;
+    border: none;
+}
+/* Styling the <Link> buttons */
+.tour .content .btn {
+    display: inline-block;
+    padding: 12px 25px; /* Add more padding for a luxurious feel */
+    font-size: 1.6rem;
+    color: white;
+    background-color: #212529; /* Primary color for a professional look */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-right: 15px; /* Add space between the buttons */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    margin: 40px;
+}
+
+.tour .content .btn:last-child {
+    margin-right: 0; /* Remove right margin for the last button */
+}
+
+.tour .content .btn:hover {
+    background-color: #212529; /* Darker shade on hover */
+    transform: translateY(-3px); /* Slightly lift the button on hover */
+}
+
+/* Additional focus and active states for better UX */
+.tour .content .btn:focus,
+.tour .content .btn:active {
+    outline: none;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Increase shadow on focus/active */
+}
+

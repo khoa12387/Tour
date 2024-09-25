@@ -1,0 +1,145 @@
+/* Faq.css */
+
+.faq-section {
+    max-width: 800px; /* Độ rộng tối đa của phần FAQ */
+    margin: 50px auto; /* Căn giữa với khoảng cách trên */
+    padding: 20px; /* Khoảng cách bên trong */
+    background-color: #1a1a1a; /* Màu nền tối cho sự bí ẩn */
+    color: #e0e0e0; /* Màu chữ sáng để nổi bật trên nền tối */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng mạnh hơn */
+    transition: box-shadow 0.3s; /* Hiệu ứng chuyển tiếp */
+    margin-top: 100px;
+}
+
+.faq-section:hover {
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.5); /* Đổ bóng khi hover */
+}
+
+.faq-section h2 {
+    text-align: center; /* Căn giữa tiêu đề */
+    font-size: 2.5em; /* Kích thước chữ tiêu đề */
+    color: #ffffff; /* Màu chữ trắng cho tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column; /* Xếp theo chiều dọc */
+    gap: 15px; /* Khoảng cách giữa các mục */
+}
+
+.faq-content {
+    display: flex; /* Xếp theo hàng ngang */
+    flex-direction: column; /* Đặt chiều dọc cho câu hỏi */
+}
+
+.faq-question {
+    cursor: pointer; /* Đổi con trỏ khi hover */
+    margin-bottom: 10px; /* Khoảng cách dưới cho câu hỏi */
+    align-self: flex-start; /* Căn trái bong bóng câu hỏi */
+    transition: background-color 0.2s; /* Hiệu ứng chuyển tiếp */
+}
+
+.faq-question:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Hiệu ứng màu nền sáng khi hover */
+}
+
+.faq-question-bubble {
+    padding: 15px 20px; /* Khoảng cách bên trong */
+    background-color: #007bff; /* Màu nền cho câu hỏi */
+    color: #ffffff; /* Màu chữ trắng */
+    border-radius: 20px; /* Bo góc cho bong bóng */
+    display: inline-block; /* Hiển thị như một khối */
+    width: 100%; /* Đặt chiều rộng là 100% */
+    max-width: 400px; /* Độ rộng tối đa của bong bóng */
+    word-wrap: break-word; /* Bẻ dòng khi quá độ rộng */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng cho bong bóng */
+}
+
+.faq-answer-container {
+    display: flex; /* Xếp theo hàng ngang */
+    flex-direction: column; /* Đặt chiều dọc cho câu trả lời */
+    align-items: flex-end; /* Căn phải cho câu trả lời */
+}
+
+.loading {
+    margin-bottom: 10px; /* Khoảng cách dưới cho chữ "Đang tải..." */
+    font-weight: bold; /* Đậm cho chữ "Đang tải..." */
+    color: #bbbbbb; /* Màu chữ nhạt hơn cho chữ "Đang tải..." */
+}
+
+.faq-answer-bubble {
+    padding: 15px 20px; /* Khoảng cách bên trong */
+    background-color: #2a2a2a; /* Màu nền tối hơn cho câu trả lời */
+    border-radius: 20px; /* Bo góc cho bong bóng */
+    color: #e0e0e0; /* Màu chữ sáng cho câu trả lời */
+    width: 100%; /* Đặt chiều rộng là 100% */
+    max-width: 400px; /* Độ rộng tối đa của bong bóng */
+    word-wrap: break-word; /* Bẻ dòng khi quá độ rộng */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Đổ bóng cho bong bóng */
+}
+
+.bot {
+    font-weight: bold; /* Đậm cho chữ "Bot:" */
+    color: #00ccff; /* Màu chữ cho Bot */
+}
+
+.user {
+    font-weight: bold; /* Đậm cho chữ "Bạn:" */
+    color: #ffcc00; /* Màu chữ cho người dùng */
+}
+
+/* Các kiểu CSS cho chatbot */
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px; /* Độ rộng của chatbot */
+    background-color: #fff; /* Màu nền của chatbot */
+    border-radius: 10px; /* Bo góc cho chatbot */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Đổ bóng cho chatbot */
+    display: none; /* Ẩn chatbot ban đầu */
+    flex-direction: column; /* Xếp theo chiều dọc */
+    z-index: 1000; /* Đặt trên các phần khác */
+}
+
+.chatbot-header {
+    background-color: #007bff; /* Màu nền tiêu đề chatbot */
+    color: white; /* Màu chữ tiêu đề */
+    padding: 10px; /* Khoảng cách bên trong tiêu đề */
+    border-top-left-radius: 10px; /* Bo góc cho bên trái */
+    border-top-right-radius: 10px; /* Bo góc cho bên phải */
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.chatbot-messages {
+    padding: 10px; /* Khoảng cách bên trong khung tin nhắn */
+    max-height: 400px; /* Chiều cao tối đa của khung tin nhắn */
+    overflow-y: auto; /* Cuộn khi quá chiều cao tối đa */
+}
+
+.chatbot-input {
+    display: flex; /* Xếp theo hàng ngang */
+}
+
+.chatbot-input textarea {
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+    padding: 10px; /* Khoảng cách bên trong */
+    border: 1px solid #ccc; /* Đường viền cho textarea */
+    border-radius: 5px; /* Bo góc cho textarea */
+}
+
+.chatbot-input button {
+    padding: 10px; /* Khoảng cách bên trong */
+    background-color: #007bff; /* Màu nền nút gửi */
+    color: white; /* Màu chữ nút gửi */
+    border: none; /* Không có đường viền */
+    border-radius: 5px; /* Bo góc cho nút gửi */
+    cursor: pointer; /* Đổi con trỏ khi hover */
+}
+
+.chatbot-input button:hover {
+    background-color: #0056b3; /* Màu nền khi hover */
+}
+
+

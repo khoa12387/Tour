@@ -1,0 +1,177 @@
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+    .header {
+        padding: 1.5rem 2rem;
+    }
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #222;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+    }
+    .home {
+        margin-top: 10rem;
+    }
+    .home .content span {
+        font-size: 8vw;
+    }
+    .home .content h3 {
+        font-size: 9vw;
+    }
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: #29d9d5; /* Change this value to the desired color */
+    font-weight: bolder;
+    text-decoration: none; /* Ensure the logo text has no underline */
+}
+
+
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../images/anhnen.jpg') repeat-x;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header-top .navbar a {
+    font-size: 1.7rem;
+    color: #aaa;
+    display: inline-block;
+    margin: 0 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.header-top .navbar a:hover,
+.header-top .navbar a.active { /* Thêm trạng thái .active */
+    color: #29d9d5;
+    transform: translateY(-3px);
+}
+.header-top .nav-item .nav-link.active {
+    color: #29d9d5 !important; /* Thay đổi màu icon giỏ hàng khi active */
+}
+
+/* Thay đổi màu cho số lượng trong giỏ hàng khi active */
+.header-top .nav-item .nav-link.active .cart-counter {
+    background-color: #29d9d5; /* Thay đổi màu nền của số lượng giỏ hàng khi active */
+    color: #fff; /* Đảm bảo số lượng hiển thị màu trắng khi active */
+}
+
+.header-top .btn {
+    margin-top: 0;
+}
+
+.header-top .navbar .ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: palegreen;
+}
+
+.header-top li {
+    display: inline-block;
+}
+
+.header-top li a,
+.dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.header-top li a:hover,
+.dropdown:hover .dropbtn {
+    text-align: rgb(118, 15, 15);
+}
+
+.header-top li.dropdown {
+    display: inline-block !important;
+}
+
+.header-top .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #095f5d;
+    min-width: 10px;
+    box-shadow: 0px 6px 12px 0px rgb(138, 207, 232);
+    z-index: 1;
+}
+
+.header-top li:hover .dropdown-content {
+    display: block;
+}
+
+.header-top.dropdown-content a {
+    color: rgb(9, 105, 140);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.header-top .dropdown-content a:hover {
+    background-color: rgb(56, 176, 174);
+}
+
+.header-top .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.header-top .btn-logout {
+    font-size: 1.7rem;
+    color: #fff; /* Set text color to white */
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 1rem;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: inline; /* Keep it inline to prevent line breaks */
+}
+
+.header-top .btn-logout:hover {
+    color: #29d9d5;
+    background-color: #095f5d;
+}
+
+.header-top .nav-item .nav-link .cart-counter {
+    color: #fff; /* Màu sắc của số lượng, ví dụ là màu trắng để nổi bật trên nền đỏ */
+    background-color: #ff0000; /* Màu nền đỏ */
+    border-radius: 50%; /* Đảm bảo số lượng có hình tròn */
+    padding: 0.3rem 0.6rem; /* Điều chỉnh padding để số lượng phù hợp với kích thước */
+    font-size: 1rem; /* Điều chỉnh kích thước font cho phù hợp */
+    display: inline-block; /* Đảm bảo số lượng nằm trên cùng một dòng */
+}
+
+

@@ -1,0 +1,86 @@
+.footer {
+    background-color: #222; /* Adjust based on your design */
+    color: #fff; /* Ensure text is readable */
+    padding: 4rem 2rem;
+}
+
+.footer .box-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box {
+    padding: 2rem 1rem;
+    background-color: #333; /* Ensure the box background is distinguishable */
+    border-radius: 0.5rem; /* Rounded corners */
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.2rem;
+    color: #29d9d5; /* Adjust color if necessary */
+    padding-bottom: 1rem;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: #29d9d5; /* Hover color for links */
+}
+
+.footer .box-container .box p {
+    font-size: 1.4rem;
+    color: #aaa;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.footer .box-container .box .share a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    border: 0.2rem solid #29d9d5;
+    color: #29d9d5;
+    margin-right: 0.5rem;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: #29d9d5; /* Hover background color */
+    color: #fff; /* Hover text color */
+}
+
+.banner {
+    background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url('../images/09.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 2rem;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.banner .content span {
+    font-size: 2rem;
+    color: #29d9d5;
+}
+
+.banner .content h3 {
+    font-size: 4rem;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+.banner .content p {
+    max-width: 60rem;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+    color: #aaa;
+    line-height: 2;
+}

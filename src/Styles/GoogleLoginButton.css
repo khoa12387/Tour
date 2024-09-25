@@ -1,0 +1,18 @@
+/* src/GoogleLoginButton.css */
+.google-login-icon {
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Adjust size as needed */
+    color: #4285F4; /* Google Blue */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.google-login-icon i {
+    margin: 0; /* Remove any default margin */
+}
